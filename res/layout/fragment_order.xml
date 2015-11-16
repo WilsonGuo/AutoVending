@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/order_detail_bg" />
+   <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/order_price_bg"
+        >
+       </RelativeLayout> 
+         <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/coclor"
+        >
+       </RelativeLayout>
+    <TextView 
+        android:id="@+id/price_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 30.0"
+        android:textColor="#ffff0000"
+        android:textSize="24sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="220dp"
+        android:layout_marginTop="158dp"
+        />
+     <TextView 
+        android:id="@+id/count_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:padding="10dp"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="190dp"
+        android:layout_marginTop="214dp"
+        />
+    <Button 
+        android:id="@+id/btn_del"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/count_total"
+        android:layout_toLeftOf="@id/count_total"
+        android:layout_marginRight="6dp"
+        android:background="#00f00000"
+        />
+      <Button 
+        android:id="@+id/btn_add"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/btn_del"
+        android:layout_toRightOf="@id/btn_del"
+        android:layout_marginLeft="46dp"
+         android:background="#00f00000"
+        />
+    <!-- 底部付款方式 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/order_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/order_nfc"
+                android:padding="2dp" 
+                android:background="@drawable/order_selecter"/>
+
+            <TextView
+                android:id="@+id/price_new_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 30.0"
+                android:textColor="#ffff0000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/price_old_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 38.0"
+                android:textColor="#383838"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/order_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                 android:padding="2dp" 
+                android:src="@drawable/order_sonic" />
+
+            <TextView
+                android:id="@+id/price_new_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 30.0"
+                android:textColor="#ffff0000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/price_old_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 38.0"
+                android:textColor="#383838"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/order_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                 android:padding="2dp" 
+                android:src="@drawable/order_qr" />
+
+            <TextView
+                android:id="@+id/price_new_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 30.0"
+                android:textColor="#ffff0000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/price_old_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 38.0"
+                android:textColor="#383838"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/order_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                 android:padding="2dp" 
+                android:src="@drawable/order_cash" />
+
+            <TextView
+                android:id="@+id/price_new_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 30.0"
+                android:textColor="#ffff0000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/price_old_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 38.0"
+                 android:visibility="invisible"
+                android:textColor="#383838"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                 android:padding="2dp" 
+                android:src="@drawable/order_coin" />
+
+            <TextView
+                android:id="@+id/price_new_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 30.0"
+                android:textColor="#ffff0000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/price_old_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 38.0"
+                 android:visibility="invisible"
+                android:textColor="#383838"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

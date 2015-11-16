@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.huawei.mm.vending.VendingMainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="280dp"
+        android:layout_marginTop="70dp"
+        android:background="#00000000"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/contentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4.79"
+            android:background="#0000ff00"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Btn_softDrink"
+                android:layout_width="248px"
+                android:layout_height="129px"
+                android:background="#00000000"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Soft Drink"
+                android:textColor="#ffffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Btn_food"
+                android:layout_width="248px"
+                android:layout_height="129px"
+                android:background="#00000000"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Food"
+                android:textColor="#ffffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Btn_Wine"
+                android:layout_width="248px"
+                android:layout_height="129px"
+                android:background="#00000000"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Wine"
+                android:textColor="#ffffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Btn_magazine"
+                android:layout_width="248px"
+                android:layout_height="129px"
+                android:background="#00000000"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Magazine"
+                android:textColor="#ffffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Btn_personalCare"
+                android:layout_width="248px"
+                android:layout_height="129px"
+                android:background="#00000000"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Personal Care"
+                android:textColor="#ffffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/contentDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sonicLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="34dp"
+        android:background="@drawable/sonic_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/sonic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:visibility="invisible"
+            android:background="@anim/sonic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sonicLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="34dp"
+        android:background="@drawable/nfc_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/nfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:visibility="invisible"
+            android:background="@anim/nfc" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logo" />
+
+</RelativeLayout>
